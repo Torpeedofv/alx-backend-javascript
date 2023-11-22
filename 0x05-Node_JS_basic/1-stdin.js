@@ -8,8 +8,8 @@ const rl = readline.createInterface({
 console.log('Welcome to Holberton School, what is your name?');
 
 rl.on('line', (name) => {
-  if (name) {
-    console.log(`Your name is: ${name}`);
+  if (name) { 
+    console.log(`Your name is: ${name}\r`);
     rl.close();
     if (!process.stdin.isTTY) {
       console.log('This important software is now closing');
